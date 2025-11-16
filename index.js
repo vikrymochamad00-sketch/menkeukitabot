@@ -42,9 +42,9 @@ bot.on("message", async (msg) => {
       `✔ Data tersimpan!\n\n` +
       `Type: ${type}\nAmount: ${Number(amount).toLocaleString()}\nNotes: ${notes}\n\n` +
       `📊 *Ringkasan Keuangan*\n` +
-      `• Total Income: *${income.toLocaleString()}*\n` +
-      `• Total Expense: *${expense.toLocaleString()}*\n` +
-      `• 💰 Saldo: *${saldo.toLocaleString()}*`,
+      `• Total Income: *Rp ${income.toLocaleString()}*\n` +
+      `• Total Expense: *Rp ${expense.toLocaleString()}*\n` +
+      `• 💰 Saldo: *Rp ${saldo.toLocaleString()}*`,
       { parse_mode: "Markdown" }
     );
   } catch (err) {
@@ -54,4 +54,5 @@ bot.on("message", async (msg) => {
 });
 
 console.log("Bot is running...");
+
 
