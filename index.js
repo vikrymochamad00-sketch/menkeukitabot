@@ -1,4 +1,8 @@
 require("dotenv").config();
+require("dotenv").config();
+console.log("BOT_TOKEN:", process.env.BOT_TOKEN);
+console.log("SHEET_WEBHOOK_URL:", process.env.SHEET_WEBHOOK_URL);
+
 const TelegramBot = require("node-telegram-bot-api");
 const axios = require("axios");
 
@@ -50,3 +54,4 @@ bot.on("message", async (msg) => {
 });
 
 console.log("Bot is running...");
+
